@@ -397,7 +397,7 @@ class TaskEleven {
 	public static void main(String[]arg){
 
 		int twoDigitNumber; //tseloe dvuznachnoe chislo
-		int buffer; 
+		int buffer; /// Используется дополнительная переменная
 					
 		try{
 
@@ -589,7 +589,7 @@ class RandomInt{
 			System.out.println("Input data should be different");
 		}
 		else {
-			numberThree=(numberOne+numberTwo)/2;
+			numberThree=(numberOne+numberTwo)/2; /// Число должно быть случайным, а не средним
 			System.out.println(numberThree);
 		}			
 	}
@@ -604,7 +604,7 @@ class RollingDice{
 	public static void main (String[]arg){
 		int min = 1;
 		int max = 6;
-		double randomOne = min+Math.random()*((max-min)+1);
+		double randomOne = min+Math.random()*((max-min)+1);/// Здесь лучше сразу использовать прямое преобразование в int
 		double randomTwo = min+Math.random()*((max-min)+1);
 		int sum;
 
