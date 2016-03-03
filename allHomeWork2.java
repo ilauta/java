@@ -27,7 +27,7 @@ class Chess {
             }
         }
        
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length; i++) {				/// Этот вложеный цикл лишний
                 for (int j = 0; j < height; j++) {
                      System.out.print(chess[i][j]);
             }
@@ -72,7 +72,7 @@ class MaxNubmerOfDecimars{
 		int maxNumber = 0;
 
 		for (int n=10000; n>=1; n=n-2) {
-			for (int i=1; i<=n; i++) {
+			for (int i=1; i<=n; i++) {		/// Достаточно перебрать от 2 до n/2 и добавить 1 и n
 				if (n%i==0) {
 					numberOfDecimars++;
 				}
@@ -101,7 +101,7 @@ class NumbersOfDecimars {
         int N = keyboard.nextInt();
         int D=0; //Number of decimars
     
-        for (int i=1; i<=N; i++) {
+        for (int i=1; i<=N; i++) {				/// Достаточно перебрать от 2 до n/2 и добавить 1 и n
             if (N%i==0){
                 D++;
                 
@@ -145,6 +145,7 @@ class TaskForteen{
 		int K = keyboard.nextInt();
 		int day = 0;
 
+		/// Здесь лучше использовать общепринятую последовательность дней недели.
 		String[] week = {"Wednesday", "Thursday", "Friday", "Saturday", "Sunday","Monday","Tuesday"};
 			
 
@@ -179,7 +180,7 @@ class TaskFifteen {
     // int B = 10*a - (int) (ABC/10);
     // int C = ABC%10;
 
-    	if (A!=0&&ABC%2!=0) {System.out.println(true);
+    	if (A!=0&&ABC%2!=0) {System.out.println(true);	/// А если число окажется 4-х значным?
    		 }
     		else {
     			System.out.println(false);
@@ -203,7 +204,7 @@ class TaskSixteen {
     int B = (int) (ABC/10) - 10*A;
     int C = ABC%10;
 
-    	if ( (A<B && B<C)||(B==(A+1) && C==(B+1)) ) { 
+    	if ( (A<B && B<C)||(B==(A+1) && C==(B+1)) ) { /// арифметическая последовательность - не только с интервалом 1, а с любым.
     		System.out.println("true");
    		 }
        		else { 
@@ -405,7 +406,7 @@ class ArraysOne {
         }
 
         for (int i = 0; i < N/2; i++) { //add random numbers to the array 
-         	arrayOne[i] =  
+         	arrayOne[i] =  ///?
 
 
         }
