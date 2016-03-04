@@ -181,7 +181,7 @@ public class HomeWorkCW04 {
 	
 	public static void isSimple (int n) {
 		int j=0;
-		for (int i=2; i<n; i++) {
+		for (int i=2; i<n; i++) {		/// Нет необходимости перебирать весь диапазон до n 
 			if (n%i!=0)	{
 				j=j;
 			}
